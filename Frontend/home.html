@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+    <header class="navbar">
+        <h2>SocialApp</h2>
+        <!-- <div class="nav-icons">
+           <i class="fa-solid fa-plus"></i>
+        </div> -->
+        <!-- <div class="nav-icons">
+            <i class="fa-solid fa-heart"></i>
+        </div> -->
+        <div class="nav-icons">
+            
+        </div>
+        <div class="notification-wrapper">
+            <i id="user" class="fa-solid fa-user"></i>
+            <button onclick="toggleNotifications()">
+                <i class="fa-solid fa-bell"></i><span id="notif-count">0</span>
+            </button>
+            <div id="notification-box" class="notification-box hidden">
+
+            </div>
+        </div>
+    </header>
+    <section class="create-post">
+       <i class="fa-solid fa-user"></i>
+
+        <input type="text" id="postContent" placeholder="What's on your mind?">
+
+        <input type="file" id="media" accept="image/*,video/*" hidden>
+
+        <button onclick="document.getElementById('media').click()"><i class="fa-solid fa-upload"></i></button>
+        <button onclick="createPost()">Post</button>
+    </section>
+
+    <main id="feed" class="feed"></main>
+
+   <!-- SockJS -->
+<script src="https://cdn.jsdelivr.net/npm/sockjs-client@1/dist/sockjs.min.js"></script>
+
+<!-- STOMP -->
+<script src="https://cdn.jsdelivr.net/npm/stompjs@2.3.3/lib/stomp.min.js"></script>
+
+    <script src="feed.js"></script>
+    <script src="upload.js"></script>
+    <script src="websocket.js"></script>
+    <script src="comment.js"></script>
+    <script src="notification.js"></script>
+
+</body>
+
+</html>

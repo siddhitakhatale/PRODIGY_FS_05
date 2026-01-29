@@ -1,0 +1,84 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: rgb(225, 231, 237);
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    height: 100vh;
+}
+.container{
+    background-color: rgb(186, 199, 239);
+    /* background-color: white; */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    border-radius: 10px;
+    height: 500px;
+    width: 600px;
+    overflow: hidden;
+    padding: 20px;
+    box-shadow:0px 12px 25px rgba(0,0,0,0.22) 
+}
+.loginForm{
+    position: absolute;
+}
+h1{
+    font-weight: 900;
+    color: rgb(72, 61, 139);
+    padding: 10px;
+    margin:10px 30px;
+    justify-self: center;
+    font-size: 45px;
+    letter-spacing: 1px;
+    
+}
+.in{
+    padding: 20px;
+    margin: 25px 30px;
+    width: 510px;
+    text-decoration: none;
+    border-radius: 10px;
+    margin-top: 20px;
+    border: none;
+    /* background-color: white; */
+    font-weight: 400;
+    font-size: 16px;
+    box-shadow: 0px 14px 25px rgba(0,0,0,0.3);
+}
+button{
+    
+    background-color: rgb(12, 12, 62);
+    text-decoration: none;
+    padding: 18px;
+    margin: 30px;
+    width: 540px;
+    margin-top: 50px;
+    font-weight: 900;
+    font-size: 24px;    
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+    border: none;
+    box-shadow:0px 12px 25px rgba(0,0,0,0.22);
+    letter-spacing: 2px;
+
+}
+button:hover{
+   
+    transition: 0.2s ease-in-out;
+    transform: translateY(2%);
+    background-color: rgb(50, 50, 86);
+    color: white;
+}
+p,a{
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: 25px;
+}
+p,a:hover{
+    color: rgb(200, 7, 7);
+}
